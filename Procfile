@@ -1,0 +1,1 @@
+web: java -war target/spring-mvc-form-1.0-SNAPSHOT.war
