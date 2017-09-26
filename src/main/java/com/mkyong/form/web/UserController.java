@@ -57,7 +57,7 @@ public class UserController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Model model) {
 		logger.debug("index()");
-		return "redirect:/users";
+		return "redirect:/users/add";
 	}
 
 	// list page
@@ -110,9 +110,9 @@ public class UserController {
 		User user = new User();
 
 		// set default value
-		user.setName("mkyong123");
-		user.setEmail("test@gmail.com");
-		user.setAddress("abc 88");
+		user.setName("Name");
+		user.setEmail("abc@xyz.com");
+		user.setAddress("Hi, Hello");
 		//user.setPassword("123");
 		//user.setConfirmPassword("123");
 		user.setNewsletter(true);

@@ -1,7 +1,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <head>
-<title>Spring MVC Form Handling Example</title>
+<title>PLM Assistant</title>
 
 <spring:url value="/resources/core/css/hello.css" var="coreCss" />
 <spring:url value="/resources/core/css/bootstrap.min.css"
@@ -16,12 +16,12 @@
 <nav class="navbar navbar-inverse ">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="${urlHome}">Spring MVC Form</a>
+			<a class="navbar-brand" href="${urlHome}">PLM Assistant</a>
 		</div>
-		<div id="navbar">
+		<!--<div id="navbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="${urlAddUser}">Add User</a></li>
+                            <li class="active"><a href="${urlAddUser}" >Add User</a></li>
 			</ul>
-		</div>
+		</div>-->
 	</div>
 </nav>

@@ -13,10 +13,10 @@
 
 	<c:choose>
 		<c:when test="${userForm['new']}">
-			<h1>Add User</h1>
+			<h1>Welcome</h1>
 		</c:when>
 		<c:otherwise>
-			<h1>Update User</h1>
+			<h1>Welcome</h1>
 		</c:otherwise>
 	</c:choose>
 	<br />
@@ -52,7 +52,7 @@
 
 		 <spring:bind path="address">
 			<div class="form-group ${status.error ? 'has-error' : ''}">
-				<label class="col-sm-2 control-label">Conversation</label>
+				<label class="col-sm-2 control-label">Comments</label>
 				<div class="col-sm-10">
 					<form:textarea path="address" rows="5" class="form-control" id="address" placeholder="address" />
 					<form:errors path="address" class="control-label" />
@@ -67,7 +67,7 @@
 			<div class="col-sm-offset-2 col-sm-10">
 				<c:choose>
 					<c:when test="${userForm['new']}">
-						<button type="submit" class="btn-lg btn-primary pull-right">Add</button>
+						<button type="submit" class="btn-lg btn-primary pull-right">Submit</button>
 					</c:when>
 					<c:otherwise>
 						<button type="submit" class="btn-lg btn-primary pull-right">Update</button>
